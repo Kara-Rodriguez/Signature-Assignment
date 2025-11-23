@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paws & Hearts Adoption Service — Home</title>
+  <link rel="stylesheet" href="extension.css" />
+</head>
+<body class="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="banner banner--home" role="banner" aria-label="Site banner">
+    <div class="banner__overlay">
+      <p class="tagline">Finding loving homes, one paw at a time</p>
+      <h1 class="site-title">Paws &amp; Hearts Adoption Service</h1>
+      <p class="byline">by Kara Rodriguez</p>
+    </div>
+  </header>
+
+  <!-- nav menu -->
+  <nav aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">Paws &amp; Hearts</a>
+      <ul class="nav">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="adoptions.html">Adoptions</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="intro">
+      <h2>Welcome</h2>
+      <p>
+        An organization committed to finding loving homes for pets in need, and connecting families with their new best fur friend and companion.
+      </p>
+      <div class="cta">
+        <a class="button" href="adoptions.html#available-pets">View Available Pets</a>
+        <a class="button button--alt" href="adoptions.html#pricing">See Pricing</a>
+      </div>
+    </section>
+
+    <section class="feature">
+      <h2>Featured Pet</h2>
+      <div class="cards">
+        <article class="card">
+          <figure class="card__media">
+            <img src="images/Lucy1.jpg" alt="Lucy, an Australian Shepherd" loading="lazy">
+          </figure>
+          <div class="card__body">
+            <h3>Lucy</h3>
+            <p class="meta">2 years • 45 lb • Friendly with kids</p>
+            <p class="price">$275 adoption fee</p>
+            <a class="button" href="adoptions.html#available-pets">Meet More Pets</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo" class="site-footer">
+    <div class="footer-inner">
+      <p><strong>Paws &amp; Hearts Adoption Service</strong><br>
+        7403 Pawprint Ave, Heartland, TN 12345</p>
+      <p><a href="mailto:rodriguez.kar@northeastern.edu">rodriguez.kar@northeastern.edu</a></p>
+      <small>&copy; <span id="year"></span> Paws &amp; Hearts</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

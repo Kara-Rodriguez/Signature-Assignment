@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paws & Hearts — Adoptions, Policies & Pricing</title>
+  <link rel="stylesheet" href="extension.css" />
+</head>
+<body class="adoptions">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="banner banner--adoptions" role="banner" aria-label="Adoptions banner">
+    <div class="banner__overlay">
+      <h1 class="site-title">Adoptions</h1>
+      <p class="byline">Paws &amp; Hearts Adoption Service</p>
+    </div>
+  </header>
+
+  <nav aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">Paws &amp; Hearts</a>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="adoptions.html" aria-current="page">Adoptions</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- Adoption Policies -->
+    <section id="policies" class="policies">
+      <h2>Adoption Policies</h2>
+      <ul class="checklist">
+        <li>Must be 18+ with valid ID.</li>
+        <li>Landlord approval or proof of home ownership.</li>
+        <li>All household members agree to the adoption.</li>
+        <li>Existing pets must be current on vaccinations.</li>
+        <li>Adoption fees are non-refundable and support animal care.</li>
+      </ul>
+    </section>
+
+    <!-- Available Pets -->
+    <section id="available-pets" class="available">
+      <h2>Available Pets</h2>
+      <div class="cards">
+        <!-- Card 1 -->
+        <article class="card">
+          <figure class="card__media">
+            <img src="images/Lucy1.jpg" alt="Lucy, an Australian Shepherd" loading="lazy">
+          </figure>
+          <div class="card__body">
+            <h3>Lucy</h3>
+            <p class="meta">Dog • 2 years • 45 lb • Female Spayed • Vaccinated</p>
+            <p class="price">$275</p>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="card">
+          <figure class="card__media">
+            <img src="images/Zio1.jpg" alt="Zio, black cat" loading="lazy">
+          </figure>
+          <div class="card__body">
+            <h3>Zio</h3>
+            <p class="meta">Cat • 1 year • Male Neutered • Litter trained</p>
+            <p class="price">$125</p>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="card">
+          <figure class="card__media">
+            <img src="images/Misty1.jpg" alt="Misty, playful brown tabby cat" loading="lazy">
+          </figure>
+          <div class="card__body">
+            <h3>Misty</h3>
+            <p class="meta">Kitten • 7 months • Female • First vaccines complete</p>
+            <p class="price">$150</p>
+          </div>
+        </article>
+        <!-- Card 4 -->
+        <article class="card">
+          <figure class="card__media">
+            <img src="images/Ginger1.jpg" alt="Ginger, calm and gentle Great Pyrenees Mix" loading="lazy">
+          </figure>
+          <div class="card__body">
+            <h3>Ginger</h3>
+            <p class="meta">Dog • 3 years • Female Spayed • Friendly and gentle</p>
+            <p class="price">$200</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Pricing table -->
+    <section id="pricing" class="pricing">
+      <h2>Pricing & What’s Included</h2>
+
+      <table class="price-table" role="table" aria-describedby="pricing-desc">
+        <caption id="pricing-desc" class="sr-only">Adoption fees and included services</caption>
+        <thead>
+          <tr>
+            <th scope="col">Adoption Type</th>
+            <th scope="col">What’s Included</th>
+            <th scope="col">Fee</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Adult Dog</td>
+            <td>Vaccinations, spay/neuter (age-appropriate), wellness exam</td>
+            <td>$275</td>
+          </tr>
+          <tr>
+            <td>Puppy (&lt; 1 yr)</td>
+            <td>Initial vaccinations, microchip, wellness exam</td>
+            <td>$325</td>
+          </tr>
+          <tr>
+            <td>Adult Cat</td>
+            <td>Vaccinations, spay/neuter (age-appropriate), wellness exam</td>
+            <td>$125</td>
+          </tr>
+          <tr>
+            <td>Kitten (&lt; 1 yr)</td>
+            <td>Initial vaccinations, wellness exam</td>
+            <td>$150</td>
+          </tr>
+          <tr>
+            <td>Add-ons</td>
+            <td>Microchip • Starter Kit • Basic Training (4 sessions)</td>
+            <td>$25 • $30 • $60</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer role="contentinfo" class="site-footer">
+    <div class="footer-inner">
+      <p><strong>Paws &amp; Hearts Adoption Service</strong><br>
+         7403 Pawprint Ave, Heartland, TN 12345</p>
+      <p><a href="mailto:rodriguez.kar@northeastern.edu">rodriguez.kar@northeastern.edu</a></p>
+      <small>&copy; <span id="year"></span> Paws &amp; Hearts</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paws & Hearts — Contact Us</title>
+  <link rel="stylesheet" href="extension.css" />
+</head>
+<body class="contact">
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header class="banner banner--contact" role="banner" aria-label="Contact Us banner">
+        <div class="banner__overlay">
+            <h1 class="site-title">Contact Us</h1>
+            <p class="byline">Paws &amp; Hearts Adoption Service</p>
+        </div>
+    </header>
+
+<!-- Nav menu -->
+ <nav aria-label="Primary navigation">
+    <div class="nav-inner">
+        <a class="brand" href="index.html">Paws &amp; Hearts</a>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="adoptions.html">Adoptions</a></li>
+            <li><a href="Contact.html" aria-current="page">Contact Us</a></li>
+        </ul>
+    </div>
+ </nav>
+
+<main id="main">
+    <section aria-labelledby="intro">
+        <h2 id="intro">We'd love to hear from you!</h2>
+        <p>Please complete the form below to inquire about adopting, fostering, volunteering, or general questions.</p>
+    </section>
+
+    <section aria-labelledby="contact-form">
+    
+    </section>
+        <h2 id="contact-form">Contact Form</h2>
+        
+        <div id="form-alert" class="sr-only" aria-live="polite"></div>
+
+        <form id="inquiryForm" novalidate>
+            <fieldset>
+                <legend>Your Information</legend>
+
+                <div class="form-row two-col">
+                    <div class="field">
+                        <label for="firstName">First Name <span aria-hidden="true">*</span></label>
+                        <input id="firstName" name="firstName" type="text" required
+                            autocomplete="given-name" inputmode="text" />
+                        <small class="hint">Will auto-capitalize the first letter of each word.</small>
+                    </div>
+
+                    <div class="field">
+                        <label for="lastName">Last Name <span aria-hidden="true">*</span></label>
+                        <input id="lastName" name="lastName" type="text" required
+                            autocomplete="family-name" inputmode="text" />
+                        <small class="hint">Will auto-capitalize the first letter of each word.</small>
+                    </div>
+                </div>
+
+                <div class="form-row two-col"></div>
+                    <div class="field">
+                        <label for="email">Email <span aria-hidden="true">*</span></label>
+                        <input id="email" name="email" type="email" required 
+                            autocomplete="email" placeholder="you@example.com" />
+                        <small class="hint">Use a valid email format.</small>
+                    </div>
+
+                    <div class="field">
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" name="phone" type="tel"
+                            autocomplete="tel" placeholder="(555) 123-4567" />
+                    </div>
+                </div>
+
+                <div class="form-row three-col">
+                    <div class="field">
+                        <label for="city">City <span aria-hidden="true">*</span></label>
+                        <input id="city" name="city" type="text" required inputmode="text" />
+                        <small class="hint">Will auto-capitalize the first letter of each word.</small>
+                    </div>
+
+                    <div class="field">
+                        <label for="state">State <span aria-hidden="true">*</span></label>
+                        <select id="state" name="state" required autocomplete="address-level1">
+                            <option>AL</option><option>AK</option><option>AZ</option><option>AR</option>
+                            <option>CA</option><option>CO</option><option>CT</option><option>DC</option>
+                            <option>DE</option><option>FL</option><option>GA</option><option>HI</option>
+                            <option>ID</option><option>IL</option><option>IN</option><option>IA</option>
+                            <option>KS</option><option>KY</option><option>LA</option><option>ME</option>
+                            <option>MD</option><option>MA</option><option>MI</option><option>MN</option>
+                            <option>MS</option><option>MO</option><option>MT</option><option>NE</option>
+                            <option>NV</option><option>NH</option><option>NJ</option><option>NM</option>
+                            <option>NY</option><option>NC</option><option>ND</option><option>OH</option>
+                            <option>OK</option><option>OR</option><option>PA</option><option>RI</option>
+                            <option>SC</option><option>SD</option><option>TN</option><option>TX</option>
+                            <option>UT</option><option>VT</option><option>VA</option><option>WA</option>
+                            <option>WV</option><option>WI</option><option>WY</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="zip">ZIP Code <span aria-hidden="true">*</span></label>
+                        <input id="zip" name="zip" type="text" required inputmode="numeric"
+                            placeholder="12345 or 12345-6789"
+                            pattern="^\d{5}(-\d{4})?$" />
+                        <small class="hint">5-digit or 9-digit ZIP code format.</small>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Inquiry Details</legend>
+
+                <div class="form-row two-col">
+                    <div class="field">
+                        <label for="topic">Topic <span aria-hidden="true">*</span></label>
+                        <select id="topic" name="topic" required>
+                            <option value="">Choose...</option>
+                            <option>Adoption</option>
+                            <option>Foster/Volunteer</option>
+                            <option>General Question</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="pet">Pet of Interest(optional)</label>
+                        <input id="pet" name="pet" type="text" />
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="message">Message <span aria-hidden="true">*</span></label>
+                    <textarea id="message" name="message" rows="6" required
+                        minlength="10" maxlength="1200"
+                        placeholder="Tell us about your home, schedule, and what you're looking for."></textarea>
+                </div>
+
+                <div class="field checkbox">
+                    <label>
+                        <input type="checkbox" id="consent" name="consent" required />
+                        I understand that this is an inquiry and not a gauranteed reservation.
+                    </label>
+                </div>
+            </fieldset>
+
+            <div class="actions">
+                <button class="button" type="submit">Submit Inquiry</button>
+                <button class="button button--alt" type="reset">Reset Form</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<footer role="contentinfo" class="site-footer">
+    <div class="footer-inner">
+      <p><strong>Paws &amp; Hearts Adoption Service</strong><br>
+         7403 Pawprint Ave, Heartland, TN 12345</p>
+      <p><a href="mailto:rodriguez.kar@northeastern.edu">rodriguez.kar@northeastern.edu</a></p>
+      <small>&copy; <span id="year"></span> Paws &amp; Hearts</small>
+    </div>
+  </footer>
+            
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function titleCaseWords(str) {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/([\p{L}\p{M}]+(?:-[\p{L}\p{M}]+)*)/gu, word =>
+          word.replace(/^\p{L}/u, ch => ch.toUpperCase())
+        )
+        .replace(/\s+/g, ' ');
+    }
+
+
+    function setValidity(input, ok, msg) {
+      input.setCustomValidity(ok ? '' : msg);
+    }
+
+    
+    const form = document.getElementById('inquiryForm');
+    const alertBox = document.getElementById('form-alert');
+    const firstName = document.getElementById('firstName');
+    const lastName = document.getElementById('lastName');
+    const city = document.getElementById('city');
+    const email = document.getElementById('email');
+    const zip = document.getElementById('zip');
+
+    
+    [firstName, lastName, city].forEach(el => {
+      el.addEventListener('blur', () => {
+        if (el.value.trim() !== '') {
+          el.value = titleCaseWords(el.value);
+        }
+      });
+    });
+
+   
+    email.addEventListener('input', () => {
+      if (email.validity.typeMismatch) {
+        setValidity(email, false, 'Please enter a valid email address (e.g., name@domain.com).');
+      } else {
+        setValidity(email, true, '');
+      }
+    });
+
+    
+    const zipRe = /^\d{5}(?:-\d{4})?$/;
+    zip.addEventListener('input', () => {
+      if (!zipRe.test(zip.value.trim())) {
+        setValidity(zip, false, 'Enter a valid US ZIP (12345 or 12345-6789).');
+      } else {
+        setValidity(zip, true, '');
+      }
+    });
+
+    
+    form.addEventListener('submit', (e) => {
+     
+      [firstName, lastName, city].forEach(el => {
+        if (el.value.trim() !== '') el.value = titleCaseWords(el.value);
+      });
+
+      if (!form.checkValidity()) {
+        e.preventDefault();
+        
+        alertBox.classList.remove('sr-only');
+        alertBox.textContent = 'Please fix the highlighted fields and try again.';
+       
+        const firstInvalid = form.querySelector(':invalid');
+        if (firstInvalid) firstInvalid.focus();
+      }
+    });
+  </script>
+</body>
+</html>
